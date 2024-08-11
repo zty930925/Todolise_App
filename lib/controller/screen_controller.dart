@@ -1,21 +1,12 @@
-//import 'package:flutter/material.dart';
-
-//頁面控制器(controller)
+//建立一個Screen的控制器，進行頁面切換
 class ScreenController {
-  //使用布林值，在兩個頁面之間做切換
-  bool isLoginScreen = true;
+  bool isLoggedIn = false;
 
-  // 切換螢幕並返回相應的頁面
-  String toggleScreen() {
-    //如果isLoginScreen( = true)
-    if (isLoginScreen) {
-      //現在非登入頁面(在todolist頁面)，那我就要前往登入頁面
-      isLoginScreen = false;
-      return "/login";
-    } else {
-      //現在是登入頁面(非todolist頁面)，那我就要前往todolist頁面
-      isLoginScreen = true;
+  String ExchangeScreen() {
+    if (isLoggedIn) {
       return "/todolist";
+    } else {
+      return "/login";
     }
   }
 }
