@@ -81,7 +81,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       _todos.removeAt(index);
       _user.totalTodos--;
     });
-    _workNoteService.deleteTodo(index);
+    _workNoteService.deleteTodoAtIndex(index);
   }
 
   // 更新todo的狀態
