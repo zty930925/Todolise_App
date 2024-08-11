@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         "/login": (BuildContext context) => LoginScreen(),
         "/todolist": (BuildContext context) => TodoListScreen()
       },
-      initialRoute: screenController.toggleScreen(),
+      initialRoute: screenController.ExchangeScreen(),
     );
   }
 }
