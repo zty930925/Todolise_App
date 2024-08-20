@@ -5,6 +5,7 @@ import 'package:android_app_hw/daos/todo_dao_local_file.dart';
 import 'package:android_app_hw/daos/user_dao_local_file.dart';
 import '../service/work_note_service.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter/material.dart';
 
 // todo的一覽頁
 // 使用StatefulWidget來讓畫面可以刷新(與時俱進)
@@ -123,6 +124,10 @@ class _TodoListScreenState extends State<TodoListScreen> {
             ),
             ElevatedButton(
               onPressed: _addTodo,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue, // 按鈕背景顏色
+                foregroundColor: Colors.white, // 文字顏色
+              ),
               child: Text('新增項目'),
             ),
             Expanded(
